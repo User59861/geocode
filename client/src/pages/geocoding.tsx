@@ -433,7 +433,7 @@ export default function Geocoding() {
                 ) : (
                   <Github className="w-4 h-4" />
                 )}
-                {syncing === "push" ? "Pushing..." : syncing === "pull" ? "Pulling..." : "GitHub Sync"}
+                {syncing === "push" ? "Pushing..." : syncing === "pull" ? "Pulling..." : "Address Lookup Sync"}
                 <ChevronDown className="w-3 h-3" />
               </button>
               {showSyncMenu && (
@@ -444,7 +444,7 @@ export default function Geocoding() {
                     data-testid="button-github-push"
                   >
                     <ArrowLeft className="w-4 h-4 rotate-180" />
-                    Push to GitHub
+                    Push Code to GitHub
                   </button>
                   <button
                     onClick={() => handleSync("pull")}
@@ -452,7 +452,7 @@ export default function Geocoding() {
                     data-testid="button-github-pull"
                   >
                     <ArrowLeft className="w-4 h-4" />
-                    Pull from GitHub
+                    Pull Code from GitHub
                   </button>
                   <hr className="my-1" />
                   <a
@@ -462,7 +462,7 @@ export default function Geocoding() {
                     className="block w-full px-4 py-2 text-left text-sm hover:bg-slate-50"
                     data-testid="link-github-view"
                   >
-                    View on GitHub
+                    View Repository
                   </a>
                 </div>
               )}
